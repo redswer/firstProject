@@ -1,0 +1,32 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+body>div {
+    flex-direction: column;
+}
+
+body>div * {
+    margin: 20px auto;
+}
+
+body div a {
+    background-color: rgb(119, 175, 107);
+    width: 300px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}

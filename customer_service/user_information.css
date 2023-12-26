@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1500px;
+}
+
+main {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* ========================== header ============================ */
+header {
+    position: initial;
+}
+
+.user_support ul li:nth-of-type(-n+2) {
+    visibility: hidden;
+}
+
+/* ========================== main ============================== */
+
+.bi {
+    color: rgb(119, 175, 107);
+}
+
+.main_text {
+    margin: 50px auto;
+    align-items: center;
+}
+
+.main_text h1 {
+    margin-left: 15px;
+}
+
+.main_text+div h2 {
+    color: rgb(119, 175, 107);
+}
+
+/* 테이블 ================ */
+
+table {
+    border: 1px solid #666;
+    border-collapse: collapse;
+    text-align: left;
+    width: 1240px;
+}
+
+tbody {
+    flex-direction: column;
+}
+
+table th {
+    width: 200px;
+    background-color: honeydew;
+    border-right: 1px solid #666;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+table tr {
+    border: 1px solid #666;
+    line-height: 50px;
+}
+
+table td input {
+    line-height: 30px;
+    font-size: 20px;
+    padding: 0 10px;
+    margin: auto 15px;
+}
+
+/* 기본정보 ======================== */
+/* 프로필 사진 */
+
+.profile {
+    width: 150px;
+    height: 150px;
+}
+
+.profile {
+    margin-top: 5px;
+}
+
+.profile_size {
+    font-weight: initial;
+    font-size: 16px;
+}
+
+#profile_img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+}
+
+/* 주소검색 ============================ */
+
+table span a {
+    background-color: whitesmoke;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.address_explain {
+    font-size: 12px;
+}
+
+/* 이메일 ==================== */
+#email_domain {
+    font-size: 20px;
+    background-color: whitesmoke;
+}
+
+.email_explain {
+    margin-left: 10px;
+    color: rgb(119, 175, 107);
+}
+
+/* 전화번호 =================== */
+.phone_number input {
+    text-align: center;
+}
+
+.sms_explain {
+    margin-left: 10px;
+    color: rgb(119, 175, 107);
+}
+
+/* 하단 버튼 ===================== */
+
+.button {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button button {
+    width: 150px;
+    height: 50px;
+    margin: auto 50px;
+    font-size: 20px;
+    background-color: rgb(119, 175, 107);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.button .cancel_button {
+    background-color: darkgray;
+    border: 1px solid;
+    color: black;
+}
+
+/* 사이드 버튼 ======================= */
+.side_button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.bi1,
+.bi2 {
+    color: dimgrey;
+}
+
+.bi1 {
+    margin-bottom: 20px;
+}
+
+.bi1:hover,
+.bi2:hover {
+    color: rgb(119, 175, 107);
+}

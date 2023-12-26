@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1500px;
+    height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+main {
+    width: 1240px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* ========================================================== */
+/* ================== header =============== */
+
+header {
+    border-bottom: 1px solid #666;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    flex-direction: row;
+}
+
+.logo {
+    align-items: center;
+    justify-content: end;
+}
+
+.logo div {
+    margin: auto 20px;
+}
+
+.search_box {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 3fr 11fr 1fr 3fr;
+}
+
+.search_box input:focus {
+    outline: 0px solid rgb(119, 175, 107);
+}
+
+.search_box input {
+    height: 50px;
+    background-color: white;
+    border: 3px solid rgb(119, 175, 107);
+    border-radius: 50px;
+    font-size: 25px;
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.search_box a {
+    grid-area: 2 / 3 / 3 / 4;
+    z-index: 1;
+    text-align: center;
+    margin: auto 0;
+}
+
+.search_img {
+    width: 30px;
+    height: 30px;
+}
+
+.log_in_button {
+    align-self: center;
+}
+
+header .log_in_button a {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(119, 175, 107);
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/* =========================================================== */
+/* ============== main ============= */
+
+form {
+    margin: auto;
+    width: 70%;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    background-color: honeydew;
+}
+
+.log_in_logo_img {
+    text-align: center;
+}
+
+.log_in_box {
+    border: 0px;
+    height: 500px;
+}
+
+.log_in_box>div {
+    text-align: center;
+}
+
+.advertise {
+    text-align: center;
+}
+
+.log_in_box>div {
+    width: 50%;
+    margin: auto 0;
+}
+
+#log_in_id,
+#password {
+    font-size: 20px;
+    width: 80%;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    margin: 10px 20px;
+}
+
+.check_box {
+    margin: 10px 20px;
+    display: inline-block;
+}
+
+.check_box label {
+    color: #666;
+}
+
+#log_in_button {
+    width: calc(80% + 10px);
+    margin: 10px 20px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    background-color: rgb(119, 175, 107);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.find_membership {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.find_membership a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+/* 아이콘 ==================== */
+
+.log_in_icon {
+    margin-top: 40px;
+}
+
+.log_in_icon>div {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.log_in_icon span {
+    margin: 10px;
+}
+
+.log_in_icon a {
+    text-decoration: none;
+}
+
+.log_in_icon svg {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    fill: white;
+    width: 40px;
+    height: 40px;
+}
+
+.bi-facebook {
+    background-color: blue;
+}
+
+.bi-google {
+    background-color: red;
+}
+
+.bi-instagram {
+   background-color: purple;
+}
+
+.log_in_icon .bi-naver {
+    background-color: green;
+}
+
+/* ============================================================== */
+/* ================ 사이드 바 ====================== */
+
+.side_button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.bi1 {
+    color: dimgrey;
+}
+
+.bi1 {
+    margin-bottom: 20px;
+}
+
+.bi1:hover {
+    color: rgb(119, 175, 107);
+}

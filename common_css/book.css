@@ -1,0 +1,138 @@
+.margin_0 {
+    margin: 0;
+}
+
+.text_center {
+    text-align: center;
+}
+
+body {
+    background-color: skyblue;
+}
+
+/* header */
+header {
+    background-color: azure;
+    margin-bottom: 0;
+}
+
+.top_banner {
+    background-color: antiquewhite;
+}
+
+
+.top_banner li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+input {
+    font-size: 30px;
+    text-align: center;
+    width: 60vw;
+}
+
+.search_button {
+    width: 80px;
+    height: 40px;
+}
+
+.top_sub_banner li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* main */
+
+.main_section h2 {
+    display: block;
+}
+
+.main_section p {
+    display: block;
+}
+
+.book_type_price {
+    margin-right: 40px;
+}
+
+.book_type_price ul li {
+    display: inline-block;
+    opacity: 0.8;
+    line-height: 30px;
+    background-color: gray;
+    width: 100px;
+}
+
+.book_type_price ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    display: inline-block;
+    width: 300px;
+}
+
+.book_explain {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 500;
+    display: block;
+    width: 330px;
+    margin-left: 150px;
+}
+
+.book_score {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.price {
+    display: block;
+    text-align: center;
+}
+
+.review {
+    text-align: center;
+    display: block;
+    background-color: silver;
+    line-height: 100px;
+}
+
+.review ul li {
+    display: inline-block;
+    width: 150px;
+    color: black;
+}
+
+.book_explain_section {
+    background-color: khaki;
+    margin: 100px;
+    padding: 2px;
+}
+
+/* footer */
+footer {
+    background-color: darkgrey;
+}
+
+.footer_categori ul li {
+    display: inline-block;
+}
+
+.footer_categori {
+    text-align: center;
+}
+
+footer ul li a {
+    text-decoration: none;
+}

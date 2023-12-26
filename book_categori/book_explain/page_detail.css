@@ -1,0 +1,660 @@
+/* 주석처리된 background-color 는 수정의 용이함을 위해 존재함. 추후 삭제 예정. */
+
+body {
+    min-width: 1500px;
+}
+
+header {
+    margin-bottom: 60px;
+}
+
+body,
+.main_hea,
+.book,
+.book_info,
+.int,
+.review,
+.view_box,
+.return {
+    margin: auto;
+}
+
+.book_info_box,
+.book_info_01_R,
+.book_info_03_R,
+.book_info_04_R,
+.book_info_05_R,
+.book_info_06_R,
+.book_info_07_R,
+.buy,
+.int_info_R,
+.int_int_R,
+.int_contents_R,
+.int_author_R,
+.review_btn_cover,
+.review_con_01_R,
+.review_con_02_R,
+.review_con_03_R,
+.review_con_04_R,
+.review_con_05_R,
+.return_R {
+    float: right;
+}
+
+/* =================================================================== */
+/* main */
+
+.main_hea {
+    width: 1240px;
+}
+
+.dis_inBlock {
+    display: inline-block;
+}
+
+.review_star_col {
+    color: rgb(255, 88, 88);
+}
+
+/* =================================================================== */
+/* book */
+
+.book {
+    background-color: rgb(221, 255, 255);
+    width: 90%;
+    margin-bottom: 30px;
+    font-size: 0px;
+    /* div 사이의 공백 제거 */
+}
+
+.book_img {
+    /* background-color: rgb(98, 255, 255); */
+    width: 45%;
+}
+
+.book_img_01 {
+    width: 100%;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+.book_info_box {
+    /* background-color: rgb(188, 255, 195); */
+    width: 525px;
+    font-size: 17px;
+    line-height: 60px;
+}
+
+.book_name_box {
+    /* background-color: antiquewhite; */
+    text-align: center;
+}
+
+.book_name {
+    /* background-color: rgb(248, 201, 140); */
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.book_info {
+    /* background-color: beige; */
+    width: 400px;
+    height: 360px;
+}
+
+.book_info_01 {
+    /* background-color: rgb(255, 255, 197); */
+    height: 60px;
+}
+
+.book_info_01_L {
+    /* background-color: rgb(255, 191, 191); */
+    width: 100px;
+    height: 60px;
+    font-size: 14px;
+}
+
+.book_info_01_R {
+    /* background-color: rgb(134, 171, 255); */
+    width: 300px;
+    height: 60px;
+    text-decoration: line-through;
+    text-align: right;
+}
+
+.book_info_02 {
+    /* background-color: rgb(191, 191, 255); */
+    height: 60px;
+    font-size: 23px;
+}
+
+.book_info_02_L {
+    /* background-color: rgb(191, 202, 255); */
+    width: 100px;
+    height: 60px;
+    float: left;
+}
+
+.book_info_02_R {
+    /* background-color: rgb(251, 255, 166); */
+    width: 300px;
+    height: 60px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.book_info_02_pri {
+    /* background-color: rgb(255, 166, 166); */
+    font-size: 23px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.book_info_02_dis {
+    /* background-color: rgb(255, 166, 166); */
+    text-align: right;
+}
+
+
+.book_info_03 {
+    /* background-color: rgb(255, 185, 157); */
+    height: 60px;
+}
+
+.book_info_03_L {
+    /* background-color: rgb(255, 191, 191); */
+    width: 100px;
+    height: 60px;
+}
+
+.book_info_03_R {
+    /* background-color: rgb(134, 171, 255); */
+    width: 300px;
+    height: 60px;
+    text-align: right;
+}
+
+.book_info_04 {
+    /* background-color: rgb(251, 220, 255); */
+    height: 60px;
+}
+
+.book_info_04_L {
+    /* background-color: rgb(191, 201, 255); */
+    width: 100px;
+    height: 60px;
+}
+
+.book_info_04_R {
+    /* background-color: rgb(255, 167, 167); */
+    width: 300px;
+    height: 60px;
+    text-align: right;
+}
+
+.book_info_05 {
+    /* background-color: rgb(179, 223, 255); */
+    height: 60px;
+}
+
+.book_info_05_L {
+    /* background-color: rgb(255, 191, 191); */
+    width: 100px;
+    height: 60px;
+}
+
+.book_info_05_R {
+    /* background-color: rgb(167, 193, 255); */
+    width: 300px;
+    height: 60px;
+    text-align: right;
+}
+
+.quantity {
+    width: 100px;
+    height: 30px;
+}
+
+.book_info_06 {
+    /* background-color: rgb(179, 223, 255); */
+    height: 60px;
+}
+
+.book_info_06_L {
+    /* background-color: rgb(255, 191, 191); */
+    width: 150px;
+    height: 60px;
+}
+
+.book_info_06_R {
+    /* background-color: rgb(167, 193, 255); */
+    width: 250px;
+    height: 60px;
+    font-weight: bold;
+    text-align: right;
+    color: rgb(91, 116, 183);
+}
+
+.book_info_07 {
+    /* background-color: rgb(210, 210, 210); */
+    height: 60px;
+    text-align: center;
+    margin-top: 213px;
+}
+
+.book_info_07_L {
+    /* background-color: rgb(191, 205, 255); */
+    width: 262.5px;
+    height: 60px;
+}
+
+.book_info_07_R {
+    /* background-color: rgb(255, 167, 167); */
+    width: 262.5px;
+    height: 60px;
+}
+
+.basket {
+    background-color: rgb(190, 190, 190);
+    width: 260px;
+    height: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    float: left;
+    border-radius: 5px;
+}
+
+.buy {
+    background-color: rgb(255, 88, 88);
+    width: 260px;
+    height: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* =================================================================== */
+/* int */
+
+.int {
+    /* background-color: rgb(255, 232, 248); */
+    width: 1100px;
+    height: 1212px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.int_info {
+    /* background-color: beige; */
+    width: 1100px;
+    height: 170px;
+}
+
+.int_info_L {
+    /* background-color: rgb(255, 205, 166); */
+    width: 250px;
+    height: 170px;
+    font-size: 20px;
+}
+
+.int_info_R {
+    /* background-color: rgb(190, 194, 255); */
+    width: 850px;
+    height: 170px;
+    white-space: pre-line;
+}
+
+.int_int {
+    /* background-color: rgb(223, 255, 216); */
+    width: 1100px;
+    height: 420px;
+}
+
+.int_int_L {
+    /* background-color: rgb(255, 205, 166); */
+    width: 250px;
+    height: 420px;
+    font-size: 20px;
+}
+
+.int_int_R {
+    /* background-color: rgb(190, 194, 255); */
+    width: 850px;
+    height: 420px;
+    white-space: pre-line;
+}
+
+.int_contents {
+    /* background-color: rgb(216, 235, 255); */
+    width: 1100px;
+    height: 200px;
+}
+
+.int_contents_L {
+    /* background-color: rgb(255, 205, 166); */
+    width: 250px;
+    height: 200px;
+    font-size: 20px;
+}
+
+.int_contents_R {
+    /* background-color: rgb(190, 194, 255); */
+    width: 850px;
+    height: 200px;
+    white-space: pre-line;
+}
+
+.int_author {
+    /* background-color: rgb(220, 216, 255); */
+    width: 1100px;
+    height: 320px;
+}
+
+.int_author_L {
+    /* background-color: rgb(255, 205, 166); */
+    width: 250px;
+    height: 320px;
+    font-size: 20px;
+}
+
+.int_author_R {
+    /* background-color: rgb(190, 194, 255); */
+    width: 850px;
+    height: 320px;
+    white-space: pre-line;
+}
+
+/* ======================================================================= */
+/* review */
+
+.review {
+    /* background-color: rgb(236, 202, 255); */
+    width: 1100px;
+    height: 1000px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.review_box {
+    /* background-color: rgb(210, 210, 255); */
+    width: 1100px;
+    display: flex;
+}
+
+.review_L {
+    /* background-color: antiquewhite; */
+    width: 250px;
+    font-size: 20px;
+
+    /* align-self: start; */
+}
+
+.review_write {
+    /* background-color: rgb(252, 183, 171); */
+    width: 850px;
+    height: 200px;
+}
+
+.review_star_cover {
+    /* background-color: rgb(253, 183, 133); */
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+.review_star {
+    /* background-color: rgb(219, 255, 196); */
+    height: 35px;
+    font-size: 25px;
+    direction: rtl;
+}
+
+.star_label {
+    /* color: rgb(128, 197, 254); */
+    color: lightgrey;
+}
+
+.star_label:hover,
+.star_label:hover~label {
+    color: rgb(255, 88, 88);
+    cursor: pointer;
+}
+
+.star_radio {
+    display: none;
+}
+
+.star_radio:checked~label {
+    color: rgb(255, 88, 88);
+}
+
+.review_note_cover {
+    /* background-color: rgb(202, 255, 237); */
+    height: 150px;
+    display: flex;
+}
+
+.review_note {
+    /* background-color: rgb(255, 205, 205); */
+    width: 700px;
+    height: 150px;
+}
+
+.review_note_01 {
+    box-sizing: border-box;
+    width: 680px;
+    height: 150px;
+    font-size: 18px;
+    resize: none;
+    padding: 10px;
+}
+
+.review_btn_cover {
+    /* background-color: rgb(226, 196, 255); */
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+
+.review_btn {
+    display: inline-block;
+    background-color: rgb(255, 88, 88);
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.review_con_box {
+    /* background-color: rgb(210, 255, 240); */
+    width: 850px;
+    margin-top: 30px;
+    margin-left: calc(1100px - 850px);
+}
+
+.review_con_01,
+.review_con_02,
+.review_con_03,
+.review_con_04,
+.review_con_05 {
+    /* background-color: rgb(214, 105, 105); */
+    width: 850px;
+    height: 140px;
+}
+
+
+.review_con_01_L,
+.review_con_02_L,
+.review_con_03_L,
+.review_con_04_L,
+.review_con_05_L {
+    /* background-color: antiquewhite; */
+    width: 150px;
+    height: 140px;
+}
+
+.review_con_star {
+    color: lightgrey;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.review_con_01_R,
+.review_con_02_R,
+.review_con_03_R,
+.review_con_04_R,
+.review_con_05_R {
+    /* background-color: rgb(255, 195, 255); */
+    width: 680px;
+    height: 140px;
+}
+
+.review_user_info {
+    /* background-color: beige; */
+    width: 680px;
+    height: 20px;
+}
+
+.review_user_name,
+.review_date {
+    /* background-color: rgb(222, 186, 255); */
+    width: 100px;
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.review_user_con {
+    /* background-color: rgb(232, 255, 196); */
+    width: 680px;
+    height: 110px;
+    margin-top: 10px;
+}
+
+.review_con_gap {
+    /* background-color: rgb(241, 125, 125); */
+    width: 850px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.grad {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.842) 99%);
+    width: 1100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* ------------------------------------------------------------------- */
+/* 더보기 버튼 */
+
+.view_box {
+    background-color: rgb(244, 244, 244);
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.view {
+    appearance: none;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(111, 111, 111);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.view:hover {
+    color: rgb(0, 0, 0);
+}
+
+.view::before {
+    content: "더보기 ▼";
+}
+
+.view:checked::before {
+    content: "접기 ▲";
+}
+
+.review:has(+div>.view:checked) {
+    height: 1900px;
+    overflow: unset;
+}
+
+/* ======================================================================= */
+/* return */
+
+.return {
+    /* background-color: rgb(252, 255, 216); */
+    width: 1100px;
+    height: 950px;
+    margin-top: 30px;
+}
+
+.return_L {
+    /* background-color: rgb(255, 205, 166); */
+    width: 250px;
+    height: 950px;
+    font-size: 20px;
+}
+
+.return_R {
+    /* background-color: rgb(190, 194, 255); */
+    width: 850px;
+    height: 950px;
+}
+
+.return_table {
+    font-size: 14px;
+    border-collapse: collapse;
+    white-space: pre-line;
+    opacity: 0.6;
+}
+
+.return_table tr {
+    height: 180px;
+}
+
+.return_table td {
+    border: 1px solid black;
+}
+
+.return_table tr>td:nth-child(1) {
+    border: 1px solid black;
+    color: black;
+    background-color: rgb(232, 232, 232);
+    width: 200px;
+}
+
+/* ==================================================================== */
+/* 우측 사이드바 */
+
+.side_button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.bi1,
+.bi2 {
+    color: dimgrey;
+}
+
+.bi1 {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1500px;
+    height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+main {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* =============================================================== */
+/* =========== header =============== */
+
+.user_support ul li {
+    display: none;
+}
+
+.log_out_button a {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(119, 175, 107);
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/* =============================================================== */
+/* ============== main =============== */
+
+main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+main ul svg {
+    color: rgb(119, 175, 107);
+}
+
+main ul li {
+    text-align: center;
+}
+
+main ul li a {
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+main p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main li:hover a {
+    border: 3px solid rgb(119, 175, 107);
+    border-radius: 10px;
+}
+
+main li:hover a svg {
+    color: green;
+}
+
+/* ===================================================================== */
+/* ============== side button ================== */
+.side_button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.bi1 {
+    color: #666;
+}
+
+.bi1:hover {
+    color: rgb(119, 175, 107);
+}

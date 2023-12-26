@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment_marigold</title>
+
+    <link rel="stylesheet" href="../common_css/header-footer.css">
+    <link rel="stylesheet" href="./payment.css">
+
+    <script src="https://kit.fontawesome.com/4b1297c1d2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ======================================================================= -->
+    <!-- header -->
+
+    <header>
+        <div class="header_container">
+            <div class="logo-searchbox-userinfo">
+                <h1 class="logo">
+                    <a href="../index.html">여우</a>
+                </h1>
+                <div class="header_searchbox">
+                    <input class="book_searchBox" type="text">
+                    <img class="search_img"
+                        src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" alt="검색하기">
+                    <nav>
+                        <div class="header_maincategory">
+                            <ul class="header_maincategory_list">
+                                <li class="header_maincategory_menu_category"><a
+                                        href="../../book_categori/internal.html">국내도서</a>
+                                    <div>
+                                        <span><a href="#">소설</a></span>
+                                        <span><a href="#">에세이</a></span>
+                                        <span><a href="#">판타지</a></span>
+                                    </div>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a
+                                        href="../../book_categori/foreign.html">해외도서</a>
+                                    <div>
+                                        <span><a href="#">소설</a></span>
+                                        <span><a href="#">에세이</a></span>
+                                        <span><a href="#">판타지</a></span>
+                                    </div>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a href="#">추천도서</a>
+                                    <div>
+                                        <span><a href="../../book_categori/bestseller.html">베스트 셀러</a></span>
+                                        <span><a href="../../book_categori/steadyseller.html">이달의 추천 도서</a></span>
+                                        <span><a href="#">편집장 추천 도서</a></span>
+                                    </div>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a href="#">도서용품</a>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a href="#">이벤트</a>
+                                    <div>
+                                        <span><a href="#">진행중인 이벤트</a></span>
+                                        <span><a href="#">종료된 이벤트</a></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="user_support">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../../log_in/join_membership.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="../../log_in/log_in.html">로그인</a>
+                            </li>
+                            <li>
+                                <a href="../../customer_service/my_page.html">마이페이지</a>
+                            </li>
+                            <li>
+                                <a href="../../customer_service/customer_service_notice.html">고객센터</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- main -->
+
+    <main class="main_payment">
+        <form action="./payment_server/payment_server.html">
+
+            <!-- ============================================================= -->
+            <!-- 주문 상품 -->
+
+            <div class="order_box">
+                <div class="order_name_box">
+                    <i class="order_name_deco fa-solid fa-caret-right"></i>
+                    <span class="order_name_design">주문 상품</span>
+                </div>
+
+                <div class="order_list_box">
+
+                    <table class="order_list_tb">
+
+                        <colgroup>
+                            <col class="order_list_cg_01">
+                            <col class="order_list_cg_02">
+                            <col class="order_list_cg_03">
+                            <col class="order_list_cg_04">
+                            <col class="order_list_cg_05">
+                            <col class="order_list_cg_06">
+                        </colgroup>
+
+                        <tr>
+                            <th colspan="2">상품명</th>
+                            <th>정가</th>
+                            <th>판매가</th>
+                            <th>수량</th>
+                            <th>합계</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img class="order_book_img" src="../img/marigold.jpg" alt="책 이미지">
+                            </td>
+                            <td>메리골드 마음 세탁소</td>
+                            <td>15,000원</td>
+                            <td>13,500원</td>
+                            <td>1</td>
+                            <td>13,500원</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <!-- ================================================================= -->
+            <!-- 배송지 정보 -->
+
+            <div class="order_addr_box">
+                <div class="order_addr_name_box">
+                    <i class="order_name_deco fa-solid fa-caret-right"></i>
+                    <span class="order_name_design">배송지 정보</span>
+                    <span class="order_addr_ip_box">
+                        <label>
+                            <input type="checkbox">&nbsp기본 배송정보와 동일
+                        </label>
+                    </span>
+                </div>
+
+                <div class="order_addr_con_box">
+
+                    <table class="order_addr_con_tb">
+
+                        <colgroup>
+                            <col class="order_addr_cg_01">
+                            <col class="order_addr_cg_02">
+                        </colgroup>
+
+                        <tr>
+                            <th>
+                                <span class="order_addr_con_req">* </span>
+                                <label for="order_addr_ipLabel_01">이름</label>
+                            </th>
+                            <td>
+                                <input class="order_addr_userName ip_hi" type="text" id="order_addr_ipLabel_01"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th rowspan="3"><span class="order_addr_con_req">* </span>
+                                <label for="order_addr_ipLabel_02">주소</label>
+                            </th>
+                            <td>
+                                <input class="order_addr_01 ip_hi" type="text" id="order_addr_ipLabel_02"
+                                    placeholder="우편번호" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="order_addr_02 ip_hi" type="text" placeholder="주소" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="order_addr_03 ip_hi" type="text" placeholder="상세주소" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="order_addr_con_req">* </span>
+                                <label for="order_addr_ipLabel_03">휴대폰번호</label>
+                            </th>
+                            <td>
+                                <select class="order_callNumber ip_hi" id="order_addr_ipLabel_03">
+                                    <option value="선택">선택</option>
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                </select> &ndash;
+                                <input class="order_callNumber ip_hi" type="text" required> &ndash;
+                                <input class="order_callNumber ip_hi" type="text" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="order_addr_ipLabel_04">전화번호</label></th>
+                            <td>
+                                <select class="order_callNumber ip_hi" id="order_addr_ipLabel_04">
+                                    <option value="선택">선택</option>
+                                    <option value="02">02</option>
+                                    <option value="031">031</option>
+                                    <option value="032">032</option>
+                                </select> &ndash;
+                                <input class="order_callNumber ip_hi" type="text"> &ndash;
+                                <input class="order_callNumber ip_hi" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="order_addr_ipLabel_05">배송요청사항</label></th>
+                            <td>
+                                <input class="requestList ip_hi" id="order_addr_ipLabel_05" list="requestList"
+                                    placeholder="직접입력">
+                                <datalist id="requestList">
+                                    <option value="부재시 경비실에 맡겨주세요."></option>
+                                    <option value="집앞에 놔주세요."></option>
+                                    <option value="부재시 전화주세요."></option>
+                                </datalist>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- 쿠폰/포인트, 총 결제금액 -->
+
+            <div class="order_sum_box">
+                <div class="order_sumName_box_L">
+                    <i class="order_name_deco fa-solid fa-caret-right"></i>
+                    <span class="order_name_design">쿠폰/포인트</span>
+                </div>
+                <div class="order_sumName_box_R">
+                    <span>
+                        <i class="order_name_deco fa-solid fa-caret-right"></i>
+                        <span class="order_name_design">총 결제금액</span>
+                    </span>
+                    <span class="order_sum order_name_design">13,500원</span>
+                </div>
+                <div class="order_sum_con_L">
+                    <table class="order_sum_tb_L">
+
+                        <colgroup>
+                            <col class="order_sum_cg_01">
+                            <col class="order_sum_cg_02">
+                            <col class="order_sum_cg_03">
+                        </colgroup>
+
+                        <tr>
+                            <td>쿠폰</td>
+                            <td>0장</td>
+                            <td>
+                                <button class="coupon_btn" disabled>쿠폰 선택</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>포인트 (잔여 : 0원)</td>
+                            <td>0P</td>
+                            <td>
+                                <button class="point_btn" disabled>모두 사용</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="order_sum_con_R">
+                    <table class="order_sum_tb_R">
+                        <tr>
+                            <td>총 상품금액</td>
+                            <td>15,000원</td>
+                        </tr>
+                        <tr>
+                            <td>상품 할인</td>
+                            <td>1,500원</td>
+                        </tr>
+                        <tr>
+                            <td>쿠폰/포인트 할인</td>
+                            <td>0원</td>
+                        </tr>
+                        <tr>
+                            <td>배송료</td>
+                            <td>0원</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ====================================================== -->
+            <!-- 결제수단 -->
+
+            <div class="payment_type_box">
+                <div class="payment_type_name_box">
+                    <span>
+                        <i class="order_name_deco fa-solid fa-caret-right"></i>
+                        <span class="order_name_design">결제방법</span>
+                    </span>
+                    <span class="payment_btn_box">
+                        <button type="submit" class="payment_btn">결제하기</button>
+                    </span>
+                </div>
+
+                <hr class="payment_line_01">
+
+                <div class="payment_type_sel">
+                    <input class="payment_simple_ip payment_radio" type="radio" name="payment_type" id="payment_simple">
+                    <label class="payment_radio_box" for="payment_simple">간편결제</label>
+
+                    <input class="payment_card_ip payment_radio" type="radio" name="payment_type" id="payment_card">
+                    <label class="payment_radio_box" for="payment_card">카드결제</label>
+
+                    <input class="payment_cash_ip payment_radio" type="radio" name="payment_type" id="payment_cash">
+                    <label class="payment_radio_box" for="payment_cash">무통장입금</label>
+
+                    <input class="payment_radio" type="radio" name="payment_type" id="payment_phone">
+                    <label class="payment_radio_box" for="payment_phone">휴대폰결제</label>
+
+                    <div class="payment_simple_box">
+                        <div class="payment_simple_box_01">
+                            <input class="payment_simplePay_ip" type="radio" id="payment_naverpay" name="payment_pay">
+                            <label for="payment_naverpay">
+                                <img class="payment_simplePay_img" src="./payment_img/payment_naverpay.png" alt="네이버페이">
+                                <span>&nbsp;네이버페이</span>
+                            </label>
+                        </div>
+                        <div class="payment_simple_box_01">
+                            <input class="payment_simplePay_ip" type="radio" id="payment_kakaopay" name="payment_pay">
+                            <label for="payment_kakaopay">
+                                <img class="payment_simplePay_img" src="./payment_img/payment_kakaopay.gif" alt="카카오페이">
+                                <span>&nbsp;카카오페이</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="payment_card_box">
+                        <div class="payment_simple_box_01">
+                            <input class="payment_simplePay_ip" type="radio" id="payment_kbpay" name="payment_pay">
+                            <label for="payment_kbpay">
+                                <img class="payment_cardPay_img" src="./payment_img/payment_kb.png" alt="국민카드">
+                                <span>&nbsp;국민카드</span>
+                            </label>
+                        </div>
+                        <div class="payment_simple_box_01">
+                            <input class="payment_simplePay_ip" type="radio" id="payment_shinhanpay" name="payment_pay">
+                            <label for="payment_shinhanpay">
+                                <img class="payment_cardPay_img" src="./payment_img/payment_shinhan.png" alt="신한카드">
+                                <span>&nbsp;신한카드</span>
+                            </label>
+                        </div>
+                        <div class="payment_simple_box_01">
+                            <input class="payment_simplePay_ip" type="radio" id="payment_woorpay" name="payment_pay">
+                            <label for="payment_woorpay">
+                                <img class="payment_cardPay_img" src="./payment_img/payment_woori.png" alt="우리카드">
+                                <span>&nbsp;우리카드</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="payment_acconut_box">
+                        <div class="payment_acconut_box_01">
+                            ※ 무통장 입금 시 주문자명으로 입금해 주셔야 입금확인이 가능합니다.
+                        </div>
+                        <div class="payment_simple_box_01">
+                            <table class="payment_acconut_tb">
+                                <tr>
+                                    <th>은행명</th>
+                                    <td>국민은행</td>
+                                </tr>
+                                <tr>
+                                    <th>계좌번호</th>
+                                    <td>846202-000-00-000</td>
+                                </tr>
+                                <tr>
+                                    <th>예금주명</th>
+                                    <td>(주)여우</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+    </main>
+
+    <!-- ===================================================================== -->
+    <!-- footer -->
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_menu">
+                <ul>
+                    <li>
+                        <a href="../../footer/company_introduction.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="../../footer/terms_and_conditions.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="../../footer/personal_information_policy_info.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="../../footer/youth_policy_info.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">청소년
+                            보호정책</a>
+                    </li>
+                    <li>
+                        <a href="../../footer/partnership_marketing.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">제휴 마케팅
+                            안내</a>
+                    </li>
+                    <li>
+                        <a href="../../footer/advertisement.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">광고 안내</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_info">
+                <h3>여우</h3>
+                <div class="footer_info_list">
+                    <address class="company_info">
+                        <span>대표이사 홍길동</span>
+                        <span>고객정보보호 책임자 홍길동</span>
+                        <span>사업자 등록 123-45678-90</span>
+                        <span>통신판매업신고 분당구</span>
+                        <div>
+                            <span>이메일 : FoxFox@FoxFox.com</span>
+                            <span>대표전화 : 02 -1234 - 5678</span>
+                            <span>경기도 성남시 분당구 어딘가</span>
+                        </div>
+                    </address>
+                    <div class="customer_center">
+                        <span>고객센터 : 1588 - 1588</span>
+                        <span><a href="../../customer_service/customer_service_mail_inquires.html">1:1 문의</a></span>
+                        <span><a href="../../customer_service/customer_service_faq.html">FAQ</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================================ -->
+    <!-- 우측 사이드바 -->
+    <aside class="side_button">
+        <div>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi1 bi-chat-square-dots-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg>
+            </a>
+        </div>
+
+        <div>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi2 bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                </svg>
+            </a>
+        </div>
+    </aside>
+
+</body>
+
+</html>

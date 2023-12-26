@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여우:주문/배송조회</title>
+    <link href="./orderlist.css" type="text/css" rel="stylesheet">
+    <link href="../common_css/header-footer.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <div class="logo-searchbox-userinfo">
+                <h1 class="logo">
+                    <a href="../index.html">여우</a>
+                </h1>
+                <div class="header_searchbox">
+                    <input class="book_searchBox" type="text">
+                    <img class="search_img"
+                        src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" alt="검색하기">
+                    <nav>
+                        <div class="header_maincategory">
+                            <ul class="header_maincategory_list">
+                                <li class="header_maincategory_menu_category"><a href="./internal.html">국내도서</a>
+                                    <div>
+                                        <span><a href="#">소설</a></span>
+                                        <span><a href="#">에세이</a></span>
+                                        <span><a href="#">판타지</a></span>
+                                    </div>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a href="./foreign.html">해외도서</a>
+                                    <div>
+                                        <span><a href="#">소설</a></span>
+                                        <span><a href="#">에세이</a></span>
+                                        <span><a href="#">판타지</a></span>
+                                    </div>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a href="./bestseller.html">추천도서</a>
+                                    <div>
+                                        <span><a href="./bestseller.html">베스트 셀러</a></span>
+                                        <span><a href="#">이달의 추천 도서</a></span>
+                                        <span><a href="#">편집장 추천 도서</a></span>
+                                    </div>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a href="#">도서용품</a>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a href="#">이벤트</a>
+                                    <div>
+                                        <span><a href="#">진행중인 이벤트</a></span>
+                                        <span><a href="#">종료된 이벤트</a></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="user_support">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../log_in/join_membership.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="../log_in/log_in.html">로그인</a>
+                            </li>
+                            <li>
+                                <a href="../customer_service/my_page.html">마이페이지</a>
+                            </li>
+                            <li>
+                                <a href="../customer_service/customer_service_notice.html">고객센터</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="orderdelivery-title">주문/배송조회</div>
+
+            <div class="selectdate-grandbox">
+                <div class="selectdate-name">조회기간</div>
+                <div class="selectdate-tool">
+                    <form class="selectdate-simplebutton">
+                        <button>오늘</button>
+                        <button>1주일</button>
+                        <button>1개월</button>
+                        <button>3개월</button>
+                        <button>6개월</button>
+                        <button>1년</button>
+                    </form>
+
+                    <form class="selectdate-detaildate">
+                        <div>
+                            <label for="year1"></label>
+                            <select name="year1" id="year1">
+                                <option value="">2014</option>
+                                <option value="">2015</option>
+                                <option value="">2016</option>
+                                <option value="">2017</option>
+                                <option value="">2018</option>
+                                <option value="">2019</option>
+                                <option value="">2020</option>
+                                <option value="">2021</option>
+                                <option value="">2022</option>
+                                <option value="">2023</option>
+                            </select>
+                        </div>
+
+                        <div class="selectdate-detaildate-year">년</div>
+
+                        <div>
+                            <label for="month1"></label>
+                            <select name="month1" id="month1">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                            </select>
+                        </div>
+
+                        <div class="selectdate-detaildate-month">월</div>
+
+                        <div>
+                            <label for="day1"></label>
+                            <select name="day1" id="day1">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                                <option value="">13</option>
+                                <option value="">14</option>
+                                <option value="">15</option>
+                                <option value="">16</option>
+                                <option value="">17</option>
+                                <option value="">18</option>
+                                <option value="">19</option>
+                                <option value="">20</option>
+                                <option value="">21</option>
+                                <option value="">22</option>
+                                <option value="">23</option>
+                                <option value="">24</option>
+                                <option value="">25</option>
+                                <option value="">26</option>
+                                <option value="">27</option>
+                                <option value="">28</option>
+                                <option value="">29</option>
+                                <option value="">30</option>
+                                <option value="">31</option>
+                            </select>
+                        </div>
+
+                        <div class="selectdate-detaildate-day">일</div>
+
+                        <div class="selectdate-detaildate-margin"> ~ </div>
+
+                        <div>
+                            <label for="year2"></label>
+                            <select name="year2" id="year2">
+                                <option value="">2014</option>
+                                <option value="">2015</option>
+                                <option value="">2016</option>
+                                <option value="">2017</option>
+                                <option value="">2018</option>
+                                <option value="">2019</option>
+                                <option value="">2020</option>
+                                <option value="">2021</option>
+                                <option value="">2022</option>
+                                <option value="">2023</option>
+                            </select>
+                        </div>
+
+                        <div class="selectdate-detaildate-year">년</div>
+
+                        <div>
+                            <label for="month2"></label>
+                            <select name="month2" id="month2">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                            </select>
+                        </div>
+
+                        <div class="selectdate-detaildate-month">월</div>
+
+                        <div>
+                            <label for="day2"></label>
+                            <select name="day2" id="day2">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                                <option value="">13</option>
+                                <option value="">14</option>
+                                <option value="">15</option>
+                                <option value="">16</option>
+                                <option value="">17</option>
+                                <option value="">18</option>
+                                <option value="">19</option>
+                                <option value="">20</option>
+                                <option value="">21</option>
+                                <option value="">22</option>
+                                <option value="">23</option>
+                                <option value="">24</option>
+                                <option value="">25</option>
+                                <option value="">26</option>
+                                <option value="">27</option>
+                                <option value="">28</option>
+                                <option value="">29</option>
+                                <option value="">30</option>
+                                <option value="">31</option>
+                            </select>
+                        </div>
+
+                        <div class="selectdate-detaildate-day">일</div>
+
+                    </form>
+
+                    <form class="selectdate-search">
+                        <div class="selectdate-search-box">
+                            <input type="text" placeholder="주문하신 상품명을 검색하세요">
+                        </div>
+
+                        <button class="search-button">검색하기</button>
+                    </form>
+                </div>
+
+            </div>
+
+
+            <!--====================== 주문 상품목록 - 테이블헤더 =====================-->
+            <figure>
+                <figcaption>주문내역</figcaption>
+                <table>
+                    <colgroup>
+                        <col class="col-date">
+                        <col class="col-ordernumber">
+                        <col class="col-product_information">
+                        <col class="col-price_amount">
+                        <col class="col-amount">
+                        <col class="col-deliverycost">
+                        <col class="col-orderstate">
+                        <col class="col-note">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>주문일</th>
+                            <th>주문번호</th>
+                            <th>주문상품정보</th>
+                            <th>상품금액</th>
+                            <th>수량</th>
+                            <th>배송비</th>
+                            <th>주문상태</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+
+
+                    <!-- ========================== 주문 상품 목록들 - 바디 ====================-->
+                    <tbody>
+                        <tr>
+                            <td>2023-06-11</td>
+                            <td>AC001B4234331</td>
+                            <td>
+                                <div class="table-pro-box ">
+                                    <a class="table-pro-img" href="./book_explain/orient.html">
+                                        <img src="../img/orient.jpg" alt="오리엔트 특급살인">
+                                    </a>
+
+                                    <div class="table-pro-detailbox">
+                                        <div class="pro-special">
+                                            <div class="pro-deduction">소득공제</div>
+                                            <div class="pro-category">베스트 셀러</div>
+                                            <div class="pro-category">해외 도서</div>
+                                        </div>
+                                        <div class="product-name"><a href="./book_explain/orient.html">오리엔트 특급살인</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pri-ori">₩13,500</div>
+                                <div class="pri-disc">₩15,000</div>
+                            </td>
+                            <td>1</td>
+                            <td>무료</td>
+                            <td>
+                                <div class="order-state">배송중</div>
+                                <div class="order-cancle">
+                                    <a href="./ctg_popup/ask_order_cancel.html"
+                                        onclick="window.open(this.href, '_blank', 'width=500, height=200'); return false;">주문취소</a>
+                                </div>
+                                <div class="order-check">
+                                    <a href="./ctg_popup/delivery_state.html"
+                                        onclick="window.open(this.href, '_blank', 'width=900, height=800'); return false;">
+
+                                        배송조회
+                                    </a>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>2023-06-11</td>
+                            <td>AC001B423234</td>
+                            <td>
+                                <div class="table-pro-box ">
+                                    <a class="table-pro-img" href="./book_explain/justice.html">
+                                        <img src="../img/justice_02.jpg" alt="정의란 무엇인가">
+                                    </a>
+
+                                    <div class="table-pro-detailbox">
+                                        <div class="pro-special">
+                                            <div class="pro-deduction">소득공제</div>
+                                            <div class="pro-category">스테디 셀러</div>
+                                            <div class="pro-category">해외 도서</div>
+                                        </div>
+                                        <div class="product-name">
+                                            <a href="./book_explain/justice.html">정의란 무엇인가
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pri-ori">₩13,500</div>
+                                <div class="pri-disc">₩15,000</div>
+                            </td>
+                            <td>1</td>
+                            <td>무료</td>
+                            <td>
+                                <div class="order-state">배송중</div>
+                                <div class="order-cancle">
+                                    <a href="./ctg_popup/ask_order_cancel.html"
+                                        onclick="window.open(this.href, '_blank', 'width=500, height=200'); return false;">주문취소</a>
+                                </div>
+                                <div class="order-check">
+                                    <a href="./ctg_popup/delivery_state.html"
+                                        onclick="window.open(this.href, '_blank', 'width=900, height=800'); return false;">
+
+                                        배송조회
+                                    </a>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>2023-06-12</td>
+                            <td>AC001B1674331</td>
+                            <td>
+                                <div class="table-pro-box ">
+                                    <a class="table-pro-img" href="./book_explain/marigold.html">
+                                        <img src="../img/marigold.jpg" alt="메리골드 마음 세탁소">
+                                    </a>
+
+                                    <div class="table-pro-detailbox">
+                                        <div class="pro-special">
+                                            <div class="pro-deduction">소득공제</div>
+                                            <!-- <div class="pro-category">베스트 셀러</div> -->
+                                            <div class="pro-category">국내 도서</div>
+                                        </div>
+                                        <div class="product-name"><a href="./book_explain/marigold.html">메리골드 마음 세탁소</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pri-ori">₩13,500</div>
+                                <div class="pri-disc">₩15,000</div>
+                            </td>
+                            <td>1</td>
+                            <td>무료</td>
+                            <td>
+                                <div class="order-state">배송준비중</div>
+                                <div class="order-cancle">
+                                    <a href="./ctg_popup/ask_order_cancel.html"
+                                        onclick="window.open(this.href, '_blank', 'width=500, height=200'); return false;">주문취소</a>
+                                </div>
+                                <div class="order-check">
+                                    <a href="./ctg_popup/delivery_state.html"
+                                        onclick="window.open(this.href, '_blank', 'width=900, height=800'); return false;">
+
+                                        배송조회
+                                    </a>
+                                </div>
+                            </td>
+                            <td>예약 배송</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>2023-06-13</td>
+                            <td>AC001B47683567</td>
+                            <td>
+                                <div class="table-pro-box ">
+                                    <a class="table-pro-img" href="./book_explain/suzume.html">
+                                        <img src="../img/DoorGuard.jpg" alt="스즈메의 문단속">
+                                    </a>
+
+                                    <div class="table-pro-detailbox">
+                                        <div class="pro-special">
+                                            <div class="pro-deduction">소득공제</div>
+                                            <!-- <div class="pro-category">베스트 셀러</div> -->
+                                            <div class="pro-category">해외 도서</div>
+                                        </div>
+                                        <div class="product-name"><a href="./book_explain/suzume.html">스즈메의 문단속</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pri-ori">₩13,500</div>
+                                <div class="pri-disc">₩15,000</div>
+                            </td>
+                            <td>1</td>
+                            <td>무료</td>
+                            <td>
+                                <div class="order-state">결제완료</div>
+                                <div class="order-cancle">
+                                    <a href="./ctg_popup/ask_order_cancel.html"
+                                        onclick="window.open(this.href, '_blank', 'width=500, height=200'); return false;">주문취소</a>
+                                </div>
+                                <div class="order-check">
+                                    <a href="./ctg_popup/delivery_state.html"
+                                        onclick="window.open(this.href, '_blank', 'width=900, height=800'); return false;">
+
+                                        배송조회
+                                    </a>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>2023-06-14</td>
+                            <td>AC001B42678976</td>
+                            <td>
+                                <div class="table-pro-box ">
+                                    <a class="table-pro-img" href="./book_explain/weathering_with_you.html">
+                                        <img src="../img/WeatherKid.jpg" alt="날씨의 아이">
+                                    </a>
+
+                                    <div class="table-pro-detailbox">
+                                        <div class="pro-special">
+                                            <div class="pro-deduction">소득공제</div>
+                                            <!-- <div class="pro-category">베스트 셀러</div> -->
+                                            <div class="pro-category">해외 도서</div>
+                                        </div>
+                                        <div class="product-name"><a href="./book_explain/weathering_with_you.html">날씨의
+                                                아이</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pri-ori">₩13,500</div>
+                                <div class="pri-disc">₩15,000</div>
+                            </td>
+                            <td>1</td>
+                            <td>무료</td>
+                            <td>
+                                <div class="order-state">결제완료</div>
+                                <div class="order-cancle">
+                                    <a href="./ctg_popup/ask_order_cancel.html"
+                                        onclick="window.open(this.href, '_blank', 'width=500, height=200'); return false;">주문취소</a>
+                                </div>
+                                <div class="order-check">
+                                    <a href="./ctg_popup/delivery_state.html"
+                                        onclick="window.open(this.href, '_blank', 'width=900, height=800'); return false;">
+
+                                        배송조회
+                                    </a>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </figure>
+
+
+            <div class="deliveryprocess-box">
+
+                <div class="delpro-phase">
+                    <div>입금대기중</div>
+                    <div>결제를 완료해주세요</div>
+                </div>
+
+                <div class="raquo">&raquo;</div>
+
+                <div class="delpro-phase">
+                    <div>결제완료</div>
+                    <div>판매자가 주문정보를 확인하기 전 입니다</div>
+                </div>
+
+                <div class="raquo">&raquo;</div>
+
+                <div class="delpro-phase">
+                    <div>배송준비중</div>
+                    <div>판매자가 주문을 확인하고 물품 배송을 준비중 입니다</div>
+                </div>
+
+                <div class="raquo">&raquo;</div>
+
+                <div class="delpro-phase">
+                    <div>배송중</div>
+                    <div>물품이 발송되어 고객님께 배송중입니다</div>
+                </div>
+
+                <div class="raquo">&raquo;</div>
+
+                <div class="delpro-phase">
+                    <div>배송완료</div>
+                    <div>상품수령 후 구매확정을 선택하시면 거래가 종료됩니다</div>
+                </div>
+            </div>
+
+            <div class="cautionbox">
+                <div class="cautionbox-title">주문/배송 유의사항</div>
+                <div class="cau-detail">택배 배송일정은 기본배송지 기준으로 예상일이 노출됩니다.</div>
+                <div class="cau-detail">상품별 배송일정이 서로 다를 시, 가장 늦은 일정의 상품 기준으로 모두 함께 배송됩니다.</div>
+                <div class="cau-detail">배송지 수정시 예상일이 변경 될 수 있으며, 주문서에서 배송일정을 꼭 확인하시기 바랍니다.</div>
+                <div class="cau-detail">배송완료 후 구매확정을 하지 않은 경우에는 배송이 완료된 일로부터 7일 경과 후, 8일째 자동으로 구매확정 됩니다.</div>
+                <div class="cau-detail">화물/퀵배송 등 배송완료 확인이 불가한 경우에는 판매자가 상품을 발송 처리한 일로부터 28일 경과 후, 29일째 자동으로 구매확정 됩니다.
+                </div>
+                <div class="cau-detail">e쿠폰, 모바일상품권 등 SMS로 발송되는 상품은 구매후 "배송완료" 상태이며, 오프라인 매장에서 서비스 이용 후 자동으로 구매확정 됩니다.
+                </div>
+                <div class="cau-detail">OK여우 카드번호가 오등록 되는 경우 카드번호가 자동삭제되며, 여우 포인트로 적립이 이루어집니다.</div>
+            </div>
+
+
+
+        </div>
+        <!-- 사이드 top 버튼 -->
+        <aside class="side_button">
+            <div>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi1 bi-chat-right-dots-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi2 bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                    </svg>
+                </a>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_menu">
+                <ul>
+                    <li>
+                        <a href="../footer/company_introduction.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="../footer/terms_and_conditions.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="../footer/personal_information_policy_info.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="../footer/youth_policy_info.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">청소년
+                            보호정책</a>
+                    </li>
+                    <li>
+                        <a href="../footer/partnership_marketing.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">제휴 마케팅
+                            안내</a>
+                    </li>
+                    <li>
+                        <a href="../footer/advertisement.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">광고 안내</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_info">
+                <h3>여우</h3>
+                <div class="footer_info_list">
+                    <address class="company_info">
+                        <span>대표이사 홍길동</span>
+                        <span>고객정보보호 책임자 홍길동</span>
+                        <span>사업자 등록 123-45678-90</span>
+                        <span>통신판매업신고 분당구</span>
+                        <div>
+                            <span>이메일 : FoxFox@FoxFox.com</span>
+                            <span>대표전화 : 02 -1234 - 5678</span>
+                            <span>경기도 성남시 분당구 어딘가</span>
+                        </div>
+                    </address>
+                    <div class="customer_center">
+                        <span>고객센터 : 1588 - 1588</span>
+                        <span><a href="../customer_service/customer_service_mail_inquires.html">1:1 문의</a></span>
+                        <span><a href="../customer_service/customer_service_faq.html">FAQ</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

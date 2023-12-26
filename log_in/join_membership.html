@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./join_membership.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex logo">
+            <a href="../index.html">
+                <img src="../img/fox_logo.png" alt="#">
+            </a>
+        </div>
+        <div class="search_box">
+            <input type="text">
+            <a href="#">
+                <img class="search_img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
+                    alt="logo">
+            </a>
+        </div>
+        <div class="log_in_button">
+            <a href="./log_in.html">로그인</a>
+        </div>
+    </header>
+
+    <main class="d-flex">
+        <div class="main_text d-flex">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                    <path
+                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                        d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z" />
+                </svg>
+            </div>
+            <div>
+                <h1>
+                    회원가입
+                </h1>
+            </div>
+        </div>
+        <!-- method를 임시로 get으로 설정 / post로 바꾸기 -->
+        <form action="../log_in/log_in_server/join_membership_server.html" method="get">
+            <fieldset>
+                <div class="d-flex">
+                    <!-- ============================================ -->
+                    <div class="section_h1">기본 정보 입력
+                        <div class="section_h1-2">
+                            (필수)
+                        </div>
+                    </div>
+                    <div class="section_h2 d-flex">
+                        <div>
+                            <span class="basic_span">아이디</span>
+                            <span>
+                                <label for="membership_id"></label>
+                                <input id="membership_id" name="membership_id" type="text" autocomplete="off"
+                                    maxlength="100" required>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="basic_span">이메일</span>
+                            <span>
+                                <input type="text" name="email_name" id="email_name" autocomplete="off" required> @
+                                <input type="text" hidden>
+                                <select id="email_domain" name="email_domain" required>
+                                    <option value="" hidden>mail</option>
+                                    <option value="" selected>직접입력</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="daum.net">daum.net</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="basic_span">비밀번호</span>
+                            <span>
+                                <label for="membership_password"></label>
+                                <input id="membership_password" name="membership_password" type="password"
+                                    placeholder="7자리 이상" minlength="7" required>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="basic_span">비밀번호 확인</span>
+                            <span>
+                                <label for="membership_password_check"></label>
+                                <input id="membership_password_check" name="membership_password_check" type="password"
+                                    placeholder="7자리 이상" minlength="7" required>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="basic_span">휴대전화</span>
+                            <span>
+                                <input type="text" value="010" size="5" autocomplete="off" minlength="3" maxlength="4"
+                                    required>
+                                &#8722; <input type="text" size="6" autocomplete="off" minlength="3" maxlength="4"
+                                    required>
+                                &#8722; <input type="text" size="6" autocomplete="off" minlength="3" maxlength="4"
+                                    required>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="basic_span">개인정보 유효기간</span>
+                            <span>
+                                <input type="radio" id="1year" name="valid_year" required>
+                                <label for="1year">1년</label>
+                                <input type="radio" id="3year" name="valid_year">
+                                <label for="3year">3년</label>
+                                <input type="radio" id="5year" name="valid_year">
+                                <label for="5year">5년</label>
+                                <input type="radio" id="end" name="valid_year">
+                                <label for="end">탈퇴 시까지</label>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="basic_span">이름</span>
+                            <span>
+                                <label for="membership_name"></label>
+                                <input id="membership_name" name="membership_name" type="text" autocomplete="off"
+                                    maxlength="100" required>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="basic_span">성별</span>
+                            <span>
+                                <input type="radio" name="sex" id="male" required>
+                                <label for="male">남자</label>
+                                <input type="radio" name="sex" id="female">
+                                <label for="female">여자</label>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="basic_span">생년월일</span>
+                            <span>
+                                <label for="year_birth"></label>
+                                <select name="year_birth" id="year_birth" required>
+                                    <option value="" hidden>2023</option>
+                                    <option value="" selected>2023</option>
+                                    <option value="">2022</option>
+                                    <option value="">2021</option>
+                                    <option value="">2020</option>
+                                    <option value="">2019</option>
+                                    <option value="">2018</option>
+                                    <option value="">2017</option>
+                                    <option value="">2016</option>
+                                    <option value="">2015</option>
+                                    <option value="">2014</option>
+                                    <option value="">2013</option>
+                                    <option value="">2012</option>
+                                    <option value="">2011</option>
+                                    <option value="">2010</option>
+                                    <option value="">2009</option>
+                                    <option value="">2008</option>
+                                    <option value="">2007</option>
+                                    <option value="">2006</option>
+                                    <option value="">2005</option>
+                                    <option value="">2004</option>
+                                    <option value="">2003</option>
+                                    <option value="">2002</option>
+                                    <option value="">2001</option>
+                                    <option value="">2000</option>
+                                    <option value="">1999</option>
+                                    <option value="">1998</option>
+                                    <option value="">1997</option>
+                                    <option value="">1996</option>
+                                    <option value="">1995</option>
+                                    <option value="">1994</option>
+                                    <option value="">1993</option>
+                                    <option value="">1992</option>
+                                    <option value="">1991</option>
+                                    <option value="">1990</option>
+                                    <option value="">1989</option>
+                                    <option value="">1988</option>
+                                    <option value="">1987</option>
+                                    <option value="">1986</option>
+                                    <option value="">1985</option>
+                                    <option value="">1984</option>
+                                    <option value="">1983</option>
+                                    <option value="">1982</option>
+                                    <option value="">1981</option>
+                                    <option value="">1980</option>
+                                    <option value="">1979</option>
+                                    <option value="">1978</option>
+                                    <option value="">1977</option>
+                                    <option value="">1976</option>
+                                    <option value="">1975</option>
+                                    <option value="">1974</option>
+                                    <option value="">1973</option>
+                                    <option value="">1972</option>
+                                    <option value="">1971</option>
+                                    <option value="">1970</option>
+                                    <option value="">1969</option>
+                                    <option value="">1968</option>
+                                    <option value="">1967</option>
+                                    <option value="">1966</option>
+                                    <option value="">1965</option>
+                                    <option value="">1964</option>
+                                    <option value="">1963</option>
+                                    <option value="">1962</option>
+                                    <option value="">1961</option>
+                                    <option value="">1960</option>
+                                    <option value="">1959</option>
+                                    <option value="">1958</option>
+                                    <option value="">1957</option>
+                                    <option value="">1956</option>
+                                    <option value="">1955</option>
+                                    <option value="">1954</option>
+                                    <option value="">1953</option>
+                                    <option value="">1952</option>
+                                    <option value="">1951</option>
+                                    <option value="">1950</option>
+                                </select> 년
+                            </span>
+                            <span>
+                                <label for="month_birth"></label>
+                                <select name="month_birth" id="month_birth" required>
+                                    <option value="" hidden>1</option>
+                                    <option value="" selected>1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                </select> 월
+                            </span>
+                            <span>
+                                <label for="day_birth"></label>
+                                <select name="day_birth" id="day_birth" required>
+                                    <option value="" hidden>1</option>
+                                    <option value="" selected>1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                    <option value="">13</option>
+                                    <option value="">14</option>
+                                    <option value="">15</option>
+                                    <option value="">16</option>
+                                    <option value="">17</option>
+                                    <option value="">18</option>
+                                    <option value="">19</option>
+                                    <option value="">20</option>
+                                    <option value="">21</option>
+                                    <option value="">22</option>
+                                    <option value="">23</option>
+                                    <option value="">24</option>
+                                    <option value="">25</option>
+                                    <option value="">26</option>
+                                    <option value="">27</option>
+                                    <option value="">28</option>
+                                    <option value="">29</option>
+                                    <option value="">30</option>
+                                    <option value="">31</option>
+                                </select> 일
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- ======================================================= -->
+                <div class="d-flex">
+                    <div class="section_h1">부가 정보 입력
+                        <div class="section_h1-2">
+                            (생략가능)
+                        </div>
+                    </div>
+                    <div class="section_h2 d-flex">
+                        <div>
+                            <span class="checkbox d-flex">
+                                <input id="address_checkbox" name="address_checkbox" type="checkbox">
+                                <label for="address_checkbox">
+                                    주소는 다음에 입력합니다. 단 주소가 없으면 경품 이벤트 추첨에서 제외될 수 있습니다
+                                </label>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="address">주소</span>
+                            <span>
+                                <input type="text">
+                            </span>
+                            <span class="address_search_button">
+                                <a href="https://cov19ent.kdca.go.kr/cpassportal/abs/jusoCmmn/jusoPop.do"
+                                    onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">
+                                    주소검색</a>
+                            </span>
+                            <span class="address_search_explain">
+                                주소검색 버튼을 이용해 주소 앞부분을 입력하세요
+                            </span>
+                        </div>
+                        <div>
+                            <span class="address"></span>
+                            <span>
+                                <input type="text" size="70">
+                            </span>
+                        </div>
+                        <div>
+                            <span class="address"></span>
+                            <span>
+                                <input type="text" size="70">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- ============================================================ -->
+                <div class=" d-flex">
+                    <div class="section_h1">약관 동의</div>
+                    <div class="section_h2 ">
+                        <div class="check_all d-flex">
+                            <input id="agree_all" name="agree_all" type="checkbox">
+                            <label for="agree_all">모든 약관에 동의합니다</label>
+                        </div>
+                        <div class="agree_essential">※ 필수 동의 항목
+                            <div>
+                                <div class="d-flex">
+                                    <span class="d-flex">
+                                        <input id="checkbox_use" name="checkbox_use" type="checkbox" required>
+                                        <label for="checkbox_use">이용약관</label>
+                                    </span>
+                                    <a href="./terms_of_sevice/use.html"
+                                        onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">
+                                        자세히 보기</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex">
+                                    <span class="d-flex">
+                                        <input id="checkbox_community" name="checkbox_community" type="checkbox"
+                                            required>
+                                        <label for="checkbox_community">커뮤니티 이용약관</label>
+                                    </span>
+                                    <a href="./terms_of_sevice/community.html"
+                                        onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">
+                                        자세히 보기</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex">
+                                    <span class="d-flex">
+                                        <input id="checkbox_privacy" name="checkbox_privacy" type="checkbox" required>
+                                        <label for="checkbox_privacy">개인 정보 수집 및 이용</label>
+                                    </span>
+                                    <a href="./terms_of_sevice/privacy.html"
+                                        onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">
+                                        자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="agree_devide">
+
+                        <div class="agree_option">※ 선택 동의 항목
+                            <div>
+                                <div class="d-flex">
+                                    <span class="d-flex">
+                                        <input id="checkbox_option_privacy" name="checkbox_option_privacy"
+                                            type="checkbox">
+                                        <label for="checkbox_option_privacy">선택적 개인 정보 수집 및 이용, 제공에 동의</label>
+                                    </span>
+                                    <a href="./terms_of_sevice/privacy_select.html"
+                                        onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">
+                                        자세히 보기</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex">
+                                    <span class="d-flex">
+                                        <input id="checkbox_option_newsletter" name="checkbox_option_newsletter"
+                                            type="checkbox">
+                                        <label for="checkbox_option_newsletter">관심 분야별 맞춤 뉴스레터 수신</label>
+                                    </span>
+                                    <a href="./terms_of_sevice/news_letter.html"
+                                        onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">
+                                        자세히 보기</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex">
+                                    <span class="d-flex">
+                                        <input id="checkbox_option_text" name="checkbox_option_text" type="checkbox">
+                                        <label for="checkbox_option_text">문자/카카오톡</label>
+                                    </span>
+                                    <a href="./terms_of_sevice/text_message.html"
+                                        onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">
+                                        자세히 보기</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex">
+                                    <span class="d-flex">
+                                        <input id="checkbox_option_mail" name="checkbox_option_mail" type="checkbox">
+                                        <label for="checkbox_option_mail">메일</label>
+                                    </span>
+                                    <a href="./terms_of_sevice/mail.html"
+                                        onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">
+                                        자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr class="last_hr">
+
+                <!-- ================================================================ -->
+                <div class="button_div">
+                    <button class="button"> 회원 가입하기</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <!-- ================================================================= -->
+        <!-- 사이드 top 버튼 -->
+        <aside class="side_button">
+            <div>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi1 bi-chat-right-dots-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi2 bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                    </svg>
+                </a>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div>
+            <div class="footer_menu">
+                <ul>
+                    <li>
+                        <a href="../footer/company_introduction.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="../footer/terms_and_conditions.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="../footer/personal_information_policy_info.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="../footer/youth_policy_info.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">청소년
+                            보호정책</a>
+                    </li>
+                    <li>
+                        <a href="../footer/youth_policy_info.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">제휴 마케팅
+                            안내</a>
+                    </li>
+                    <li>
+                        <a href="../footer/advertisement.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">광고 안내</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_info">
+                <div>
+                    <h3>여우여우</h3>
+                </div>
+                <div class="footer_info_list">
+                    <address class="company_info">
+                        <span>대표이사 홍길동</span>
+                        <span>고객정보보호 책임자 홍길동</span>
+                        <span>사업자 등록 123-45678-90</span>
+                        <span>통신판매업신고 분당구</span>
+                        <div>
+                            <span>이메일 : FoxFox@FoxFox.com</span>
+                            <span>대표전화 : 02 -1234 - 5678</span>
+                            <span>경기도 성남시 분당구 어딘가</span>
+                        </div>
+                    </address>
+                    <div class="customer_center">
+                        <span>고객센터 : 1588 - 1588</span>
+                        <span><a href="../customer_service/customer_service_mail_inquires.html">1:1 문의</a></span>
+                        <span><a href="../customer_service/customer_service_faq.html">FAQ</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

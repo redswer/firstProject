@@ -1,0 +1,371 @@
+body {
+    min-width: 1500px;
+}
+
+main {
+    margin: 0 auto;
+    width: 1240px;
+    /* border: 4px solid red; */
+    box-sizing: border-box;
+}
+
+
+
+
+/*========== 헤더부분 끝. 사이드바 시작 ===============*/
+
+#sidebar {
+    border: solid 1px gray;
+    border-radius: 15px;
+    width: 120px;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    position: fixed;
+    color: black;
+    margin-top: 1%;
+    margin-left: 1%;
+
+}
+
+#sidebar_name {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 10px;
+    color: black;
+}
+
+#sidebar ul li {
+    margin-bottom: 20px;
+}
+
+#sidebar ul li+li {
+    margin-bottom: 10px;
+}
+
+#sidebar a:hover {
+    background-color: antiquewhite;
+    color: crimson;
+}
+
+#sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ===== sidebar 끝 ===== */
+/* ===== main 시작 ===== */
+
+.container {
+    /* border: 1px solid green; */
+    width: 1040px;
+    margin-left: 190px;
+}
+
+.category_area {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bestseller {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bestseller_line {
+    font-size: 20px;
+    margin: 0 2%;
+}
+
+.bestseller_explain {
+    font-size: 14px;
+}
+
+/* 상품 진열 */
+.hr_sellarea {
+    width: 100%;
+    margin: 3% 0;
+
+}
+
+.sellarea {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+
+.product-card {
+    background-color: rgb(226, 243, 221);
+    /* background-color: cyan; */
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    border-radius: 44% 3% 15% 3%;
+}
+
+.pro-img {
+    width: 240px;
+    height: 260px;
+    margin-top: 21px;
+    margin-left: 16px;
+}
+
+.product-card img {
+    border: 1px solid grey;
+    width: 100%;
+    height: 100%;
+}
+
+.product-card img:hover {
+    border: 1px solid rgb(119, 175, 107);
+}
+
+.pro-introduce {
+    margin-top: 21px;
+    margin-left: 3%;
+    width: 100%;
+}
+
+.pro-rank {
+    font-size: 30px;
+    background-color: rgb(119, 175, 107);
+    width: 46px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15% 45% 15%;
+    padding: 3px;
+}
+
+.pro-name {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.pro-name>a {
+    text-decoration: none;
+    color: black;
+}
+
+.pro-name>a:hover {
+    text-decoration: underline;
+    color: rgb(119, 175, 107);
+}
+
+.pro-writer {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Diphylleia', serif;
+    margin-top: 4%;
+    margin-bottom: 10px;
+}
+
+.pro-explain {
+    width: 560px;
+    height: 150px;
+    line-height: 25px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 15px;
+    word-break: keep-all;
+    text-align: justify;
+}
+
+/* ===== 끝-introduce ===== */
+/* ===== 시작-sellcard ===== */
+
+.sellcard {
+    width: 10%;
+    padding: 0;
+    flex: auto;
+    margin-top: -1px;
+    /* background-color: aquamarine; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+/*  margin */
+.publisher,
+.compiler,
+.sellcard hr {
+    margin-left: 5%;
+}
+
+.sellcard hr {
+    width: 95%;
+    opacity: .4;
+    float: left;
+    margin: 2% auto;
+    margin-left: 4%;
+}
+
+
+
+
+
+/* ==================== 찜하기 ======================*/
+
+.hotlist {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -15px; */
+}
+
+.hotlist>a {
+    text-decoration: none;
+    font-size: 40px;
+    color: red;
+}
+
+.publisher,
+.compiler {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.publisher_list,
+.compiler_list {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.publisher_name,
+.compiler_name {
+    font-size: 13px;
+}
+
+
+.ppp {
+    margin: 7% auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+.ppp-price {
+    font-size: 30px;
+}
+
+.ppp-pointline {
+    font-size: 20px;
+}
+
+.ppp-point {
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+
+.final-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 7%;
+
+}
+
+/* =============버튼============= */
+.fibu-basket,
+.fibu-buy {
+    background-color: rgb(155, 154, 154);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.fibu-buy {
+    background-color: rgb(255, 88, 88);
+}
+
+
+
+
+
+
+
+
+
+/*=================== 페이지 넘김 버튼 =====================*/
+
+.page_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.page_btn>div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid gray;
+    background-color: lightgray;
+
+}
+
+.page_btn a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.page_btn a:hover {
+    text-decoration: underline;
+}
+
+.page_btn>.page_btn-move {
+    width: 60px;
+}
+
+.page_btn>.page_btn-move-edge {
+    width: 100px;
+}
+
+/* ================ 사이드 바 ====================== */
+
+.side_button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.bi1,
+.bi2 {
+    color: dimgrey;
+}
+
+.bi1 {
+    margin-bottom: 20px;
+}
+
+.bi1:hover,
+.bi2:hover {
+    color: rgb(119, 175, 107);
+}

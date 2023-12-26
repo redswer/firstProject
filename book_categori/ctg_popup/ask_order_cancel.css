@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ask {
+    width: 100%;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    width: 340px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn .yes,
+.btn .cancel {
+    box-sizing: border-box;
+    background-color: rgb(255, 88, 88);
+    width: 40%;
+    height: 50px;
+}
+
+.btn .cancel {
+    background-color: rgb(119, 175, 107);
+}
+
+.btn a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

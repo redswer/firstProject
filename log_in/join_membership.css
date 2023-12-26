@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1500px;
+}
+
+main {
+    width: 1240px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* ================================================================= */
+/* ================== header =============== */
+
+header {
+    border-bottom: 1px solid #666;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    flex-direction: row;
+}
+
+.logo {
+    align-items: center;
+    justify-content: end;
+}
+
+.logo div {
+    margin: auto 20px;
+}
+
+.search_box {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 3fr 11fr 1fr 3fr;
+}
+
+.search_box input:focus {
+    outline: 0px solid rgb(119, 175, 107);
+}
+
+.search_box input {
+    height: 50px;
+    background-color: white;
+    border: 3px solid rgb(119, 175, 107);
+    border-radius: 50px;
+    font-size: 25px;
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.search_box a {
+    grid-area: 2 / 3 / 3 / 4;
+    z-index: 1;
+    text-align: center;
+    margin: auto 0;
+}
+
+.search_img {
+    width: 30px;
+    height: 30px;
+}
+
+.log_in_button {
+    align-self: center;
+}
+
+header .log_in_button a {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(119, 175, 107);
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/* ================================================================== */
+/* =============== main ================= */
+
+main {
+    flex-direction: column;
+}
+
+.bi {
+    color: rgb(119, 175, 107);
+}
+
+.main_text {
+    margin: 50px 0;
+    align-items: center;
+}
+
+.main_text h1 {
+    margin-left: 15px;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+}
+
+fieldset {
+    border: 0;
+    font-size: 20px;
+    background-color: rgb(248, 255, 249);
+}
+
+/* ======================= fieldset 공통 ========================= */
+
+.section_h1 {
+    font-size: 30px;
+    width: 20%;
+    background-color: honeydew;
+    padding: 10px;
+}
+
+.section_h1-2 {
+    font-size: 70%;
+    color: gray;
+}
+
+.section_h2 {
+    flex-flow: column;
+    margin-left: 50px;
+}
+
+input {
+    height: 38px;
+    line-height: 38px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: whitesmoke;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.section_h2>div {
+    margin: 10px 0;
+}
+
+/* =================== 기본 정보 입력 ========================= */
+
+.basic_span {
+    display: inline-block;
+    width: 200px;
+    font-size: 16px;
+}
+
+select {
+    height: 45px;
+    line-height: 45px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type="radio"] {
+    height: initial;
+}
+
+#year_birth,
+#month_birth,
+#day_birth {
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+}
+
+/* =================== 부가 정보 입력 =========================== */
+
+.checkbox label {
+    margin: auto 10px;
+    color: rgb(119, 175, 107);
+}
+
+.address {
+    width: 50px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.address_search_button a {
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.address_search_explain {
+    font-size: 15px;
+    color: gray;
+    margin-left: 20px;
+}
+
+/* ===================== 약관 동의 ============================= */
+/* ===== 필수 선택 ===== */
+
+.check_all label {
+    margin: auto 10px;
+    font-weight: bold;
+    color: rgb(119, 175, 107);
+}
+
+.agree_essential,
+.agree_option {
+    color: rgb(119, 175, 107);
+}
+
+.agree_essential>*,
+.agree_option>* {
+    color: initial;
+}
+
+.agree_essential div span,
+.agree_option div span {
+    align-items: center;
+    justify-content: center;
+}
+
+.agree_devide {
+    width: 150%;
+}
+
+.agree_essential a,
+.agree_option a {
+    font-size: 60%;
+    text-decoration: none;
+    margin: auto 20px;
+}
+
+.agree_essential span label,
+.agree_option span label {
+    margin-left: 10px;
+}
+
+/* ========================= 전송 버튼 =========================== */
+
+.last_hr {
+    border: 2px solid rgb(119, 175, 107);
+}
+
+.button_div {
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(119, 175, 107);
+    border: 0;
+    font-size: 20px;
+    width: 300px;
+    line-height: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+/* ================ 사이드 바 ====================== */
+
+.side_button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.bi1,
+.bi2 {
+    color: dimgrey;
+}
+
+.bi1 {
+    margin-bottom: 20px;
+}
+
+.bi1:hover,
+.bi2:hover {
+    color: rgb(119, 175, 107);
+}
+
+/* ============================ footer ======================= */
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: silver;
+    display: inline-block;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+
+.footer_menu,
+.footer_info {
+    margin: 0 auto;
+}
+
+.footer_menu {
+    width: 1240px;
+    text-align: left;
+}
+
+.footer_menu ul {
+    list-style: none;
+    font-size: 12px;
+    padding: 0;
+}
+
+.footer_menu ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer h3 {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.footer_info {
+    width: 1240px;
+    text-align: left;
+}
+
+.footer_info_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company_info {
+    font-size: 8px;
+}
+
+.customer_center {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.customer_center span {
+    vertical-align: middle;
+}
+
+.customer_center span:nth-child(n+2) {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid;
+    margin: 0 15px;
+}
+
+.customer_center span:nth-child(n+2) a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: gainsboro;
+}
+
+.customer_center span {
+    white-space: nowrap;
+}

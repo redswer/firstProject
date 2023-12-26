@@ -1,0 +1,30 @@
+.customer_service_notice-faq-mail>:nth-child(2) {
+    background-color: rgb(224, 222, 222);
+}
+
+/* */
+main input,
+.faq_title div{
+    display: none;
+}
+
+.faq_title,
+.faq_title li div {
+    width: 100%;
+}
+
+
+.faq_list .faq_input:checked+label+div {
+    display: block;
+}
+
+.faq_q {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.faq_a {
+    display: block;
+    background-color:rgb(205, 228, 228);
+}

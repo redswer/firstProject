@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marigold</title>
+
+    <link rel="stylesheet" href="../../common_css/header-footer.css">
+    <link rel="stylesheet" href="./page_detail.css">
+
+    <script src="https://kit.fontawesome.com/4b1297c1d2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ======================================================================= -->
+    <!-- header -->
+
+    <header>
+        <div class="header_container">
+            <div class="logo-searchbox-userinfo">
+                <h1 class="logo">
+                    <a href="../../index.html">여우</a>
+                </h1>
+                <div class="header_searchbox">
+                    <input class="book_searchBox" type="text">
+                    <img class="search_img"
+                        src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" alt="검색하기">
+                    <nav>
+                        <div class="header_maincategory">
+                            <ul class="header_maincategory_list">
+                                <li class="header_maincategory_menu_category"><a
+                                        href="../../book_categori/internal.html">국내도서</a>
+                                    <div>
+                                        <span><a href="#">소설</a></span>
+                                        <span><a href="#">에세이</a></span>
+                                        <span><a href="#">판타지</a></span>
+                                    </div>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a
+                                        href="../../book_categori/foreign.html">해외도서</a>
+                                    <div>
+                                        <span><a href="#">소설</a></span>
+                                        <span><a href="#">에세이</a></span>
+                                        <span><a href="#">판타지</a></span>
+                                    </div>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a href="#">추천도서</a>
+                                    <div>
+                                        <span><a href="../../book_categori/bestseller.html">베스트 셀러</a></span>
+                                        <span><a href="../../book_categori/steadyseller.html">이달의 추천 도서</a></span>
+                                        <span><a href="#">편집장 추천 도서</a></span>
+                                    </div>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a href="#">도서용품</a>
+                                </li>
+                                <li class="header_maincategory_menu_category"><a href="#">이벤트</a>
+                                    <div>
+                                        <span><a href="#">진행중인 이벤트</a></span>
+                                        <span><a href="#">종료된 이벤트</a></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="user_support">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../../log_in/join_membership.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="../../log_in/log_in.html">로그인</a>
+                            </li>
+                            <li>
+                                <a href="../../customer_service/my_page.html">마이페이지</a>
+                            </li>
+                            <li>
+                                <a href="../../customer_service/customer_service_notice.html">고객센터</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================================================================= -->
+    <!-- main -->
+
+    <main class="main_hea">
+
+        <!-- ======================================================================== -->
+        <!-- book -->
+
+        <div class="book">
+            <div class="book_img dis_inBlock">
+                <img class="book_img_01" src="../../img/marigold.jpg" alt="book">
+            </div>
+
+            <div class="book_info_box dis_inBlock">
+                <div class="book_name_box">
+                    <strong class="book_name dis_inBlock">메리골드 마음 세탁소</strong>
+                </div>
+                <hr>
+
+                <div class="book_info">
+                    <div class="book_info_01">
+                        <div class="book_info_01_L dis_inBlock">정가</div>
+                        <div class="book_info_01_R dis_inBlock">15,000원</div>
+                    </div>
+
+                    <div class="book_info_02">
+                        <div class="book_info_02_L dis_inBlock">판매가</div>
+                        <div class="book_info_02_R dis_inBlock">
+                            <span class="book_info_02_pri">13,500원</span>
+                            <span class="book_info_02_dis">&#40; 10%, 1,500원 할인 &#41;</span>
+                        </div>
+                    </div>
+
+                    <div class="book_info_03">
+                        <div class="book_info_03_L dis_inBlock">배송료</div>
+                        <div class="book_info_03_R dis_inBlock">무료</div>
+                    </div>
+
+                    <div class="book_info_04">
+                        <div class="book_info_04_L dis_inBlock">전자책</div>
+                        <div class="book_info_04_R dis_inBlock">10,000원</div>
+                    </div>
+
+                    <div class="book_info_05">
+                        <div class="book_info_05_L dis_inBlock">수량</div>
+                        <div class="book_info_05_R dis_inBlock">
+                            <input class="quantity" type="number" name="quantity" value="1" min="1">
+                        </div>
+
+                        <div class="book_info_06">
+                            <div class="book_info_06_L dis_inBlock">배송예정일</div>
+                            <div class="book_info_06_R dis_inBlock">06/29 도착예정</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book_info_07">
+                    <div class="book_info_07_L dis_inBlock">
+                        <a class="basket dis_inBlock" href="../basket.html">장바구니</a>
+                    </div>
+                    <div class="book_info_07_R dis_inBlock">
+                        <a class="buy dis_inBlock" href="../../payment/payment_marigold.html">바로구매</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- ===================================================================== -->
+        <!-- int -->
+
+        <div class="int">
+            <div class="int_info">
+                <div class="int_info_L dis_inBlock">기본정보</div>
+                <div class="int_info_R dis_inBlock">파일 형식 : ePub(11.75 MB)
+                    TTS 여부 : 지원
+                    종이책 페이지수 : 444쪽, 약 33.9만자, 약 8.3만 단어
+                    가능 기기 : 크레마 그랑데, 크레마 사운드, 크레마 카르타, PC, 아이폰, 아이패드, 안드로이드 폰/탭, 크레마 샤인
+                    ISBN : 9788937836367
+                </div>
+            </div>
+            <hr>
+
+            <div class="int_int">
+                <div class="int_int_L dis_inBlock">책소개</div>
+                <div class="int_int_R dis_inBlock">한국에 ‘정의’ 열풍을 불러일으킨 마이클 샌델은 구제 금융, 대리 출산, 동성 결혼, 과거사 공개 사과 등 현대 사회에서
+                    우리가 흔히 부딪히는 문제를 통해 ‘무엇이 정의로운가’에 대한 해답을 탐구했다. 이 책은 탁월한 정치 철학자들이 남긴 시대를 초월한 철학적인 질문을 알기 쉽게 소개한다. 이를 통해
+                    옳고 그름, 정의와 부당함, 평등과 불평등, 개인의 권리와 공동선을 둘러싼 주장들이 경쟁하는 공적 담론과 토론의 장에서 정의에 관한 자신만의 견해를 정립하고 논리 기반을 굳건하게
+                    다지는 토대를 제공한다. 이 책은 현대 사회의 문제를 진단하고 새로운 대안을 찾아내는 정치 철학자들의 지적 탐색 과정을 보여준다.
+                    한국에 ‘정의’ 열풍을 불러일으킨 마이클 샌델은 구제 금융, 대리 출산, 동성 결혼, 과거사 공개 사과 등 현대 사회에서 우리가 흔히 부딪히는 문제를 통해 ‘무엇이 정의로운가’에
+                    대한 해답을 탐구했다. 이 책은 탁월한 정치 철학자들이 남긴 시대를 초월한 철학적인 질문을 알기 쉽게 소개한다. 이를 통해 옳고 그름, 정의와 부당함, 평등과 불평등, 개인의
+                    권리와 공동선을 둘러싼 주장들이 경쟁하는 공적 담론과 토론의 장에서 정의에 관한 자신만의 견해를 정립하고 논리 기반을 굳건하게 다지는 토대를 제공한다. 이 책은 현대 사회의 문제를
+                    진단하고 새로운 대안을 찾아내는 정치 철학자들의 지적 탐색 과정을 보여준다.
+                    한국에 ‘정의’ 열풍을 불러일으킨 마이클 샌델은 구제 금융, 대리 출산, 동성 결혼, 과거사 공개 사과 등 현대 사회에서 우리가 흔히 부딪히는 문제를 통해 ‘무엇이 정의로운가’에
+                    대한 해답을 탐구했다.
+                </div>
+            </div>
+            <hr>
+
+            <div class="int_contents">
+                <div class="int_contents_L dis_inBlock">목차</div>
+                <div class="int_contents_R dis_inBlock">이 책에 쏟아진 찬사 / 한국어판 서문
+
+                    1장_정의란 옳고 그름을 판단하는 문제일까?
+                    2장_최대 행복 원칙: 공리주의
+                    3장_우리는 우리 자신을 소유하는가?: 자유지상주의
+                    4장_대리인 고용: 시장 논리의 도덕성 문제
+                    5장_동기를 중시하는 시각: 이마누엘 칸트
+                </div>
+            </div>
+            <hr>
+
+            <div class="int_author">
+                <div class="int_author_L dis_inBlock">저자 및 역자소개</div>
+                <div class="int_author_R dis_inBlock">마이클 샌델 (Michael Sandel) (지은이)
+                    저자파일
+
+                    신간알리미 신청
+
+                    27세에 최연소 하버드대학교 교수가 되었고, 29세에 자유주의 이론의 대가인 존 롤스의 정의론을 비판한 《자유주의와 정의의 한계》를 발표하면서 세계적 명성을 얻었다. 1980년부터
+                    하버드대학교에서 정치철학을 가르치고 있으며, 그의 수업은 현재까지 수십 년 동안 학생들 사이에서 최고의 명강의로 손꼽힌다. 샌델이 진행 중인 영국 BBC정치철학 토론 프로그램
+                    〈The Global Philosopher〉 시리즈는 ‘철학적 아이디어의 이면을 탐구한다’는 주제로, 세계 각국의 석학들이 참여하고 있다.
+                    대표 저서로는 30개국 언어로 번역된 전... 더보기
+                    최근작 : <공정하다는 착각 (리커버 에디션)>,<정의란 무엇인가 (리커버 에디션)>,<당신이 모르는 민주주의> … 총 90종 (모두보기)
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- ===================================================================== -->
+        <!-- review -->
+
+        <form action="#" name="review" method="get">
+            <div class="review">
+                <div class="review_box">
+                    <div class="review_L dis_inBlock">리뷰</div>
+                    <div class="review_write">
+                        <div class="review_star_cover">
+                            <div class="review_star dis_inBlock">
+                                <input type="radio" class="star_radio" name="star_point" value="star_point_01"
+                                    id="star_point_01">
+                                <label class="star_label" for="star_point_01">
+                                    <i class="fa-solid fa-star"></i>
+                                </label>
+
+                                <input type="radio" class="star_radio" name="star_point" value="star_point_02"
+                                    id="star_point_02">
+                                <label class="star_label" for="star_point_02">
+                                    <i class="fa-solid fa-star"></i>
+                                </label>
+
+                                <input type="radio" class="star_radio" name="star_point" value="star_point_03"
+                                    id="star_point_03">
+                                <label class="star_label" for="star_point_03">
+                                    <i class="fa-solid fa-star"></i>
+                                </label>
+
+                                <input type="radio" class="star_radio" name="star_point" value="star_point_04"
+                                    id="star_point_04">
+                                <label class="star_label" for="star_point_04">
+                                    <i class="fa-solid fa-star"></i>
+                                </label>
+
+                                <input type="radio" class="star_radio" name="star_point" value="star_point_05"
+                                    id="star_point_05">
+                                <label class="star_label" for="star_point_05">
+                                    <i class="fa-solid fa-star"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="review_note_cover">
+                            <div class="review_note dis_inBlock">
+                                <textarea class="review_note_01" name="review_note" placeholder="500자 이내 작성 가능"
+                                maxlength="500" required></textarea>
+                            </div>
+                            <div class="review_btn_cover dis_inBlock">
+                                <button class="review_btn">등록</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review_con_box">
+
+                    <div class="review_con_gap">
+                        <hr>
+                    </div>
+
+                    <div class="review_con_01">
+                        <div class="review_con_01_L dis_inBlock">
+                            <span class="review_con_star">
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review_con_01_R dis_inBlock">
+                            <div class="review_user_info">
+                                <span class="review_user_name">온누리미리내</span>
+                                <span class="review_date">2023-01-20</span>
+                            </div>
+                            <div class="review_user_con">
+                                선생님 항상 존경합니다. 저도 한 때는 16만원 들고 가출한 적이 있으나, 선생님의 뼈아픈 글들을 읽고 노력하며, 16만원부터 시작하여 누구의
+                                도움없이, 현재는 작은 사업체를 3개 운영하고 있습니다. 저도 훗날, 선생님처럼 우여곡절을 겪고 있는 젊은이들에게 도움을 주는 일을 하고 싶습니다.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review_con_gap">
+                        <hr>
+                    </div>
+
+                    <div class="review_con_02">
+                        <div class="review_con_02_L dis_inBlock">
+                            <span class="review_con_star">
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review_con_02_R dis_inBlock">
+                            <div class="review_user_info">
+                                <span class="review_user_name">clhbdss</span>
+                                <span class="review_date">2023-03-04</span>
+                            </div>
+                            <div class="review_user_con">
+                                와 최악이다. 이게 책인가? 반품 신청함. 말도 너무 험하고 몇 챕터 읽었는데 기분만 상했음
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review_con_gap">
+                        <hr>
+                    </div>
+
+                    <div class="review_con_03">
+                        <div class="review_con_03_L dis_inBlock">
+                            <span class="review_con_star">
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review_con_03_R dis_inBlock">
+                            <div class="review_user_info">
+                                <span class="review_user_name">추뱅</span>
+                                <span class="review_date">2023-03-05</span>
+                            </div>
+                            <div class="review_user_con">
+                                이전에 비매품으로 나왔던 책도 소장중입니다만, 수정본이라도 내용상 크게 변한 건 없군요. 세상이 많이 변했는데, 자기 확신 가득한 옛날 사람이 본인
+                                살던 시대 이야기만 줄창 늘어놓는 느낌입니다. 차라리 유익한 유튜브 채널이나 트렌드에 맞는 자기계발서가 현실에 가깝습니다.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review_con_gap">
+                        <hr>
+                    </div>
+
+                    <div class="review_con_04">
+                        <div class="review_con_04_L dis_inBlock">
+                            <span class="review_con_star">
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review_con_04_R dis_inBlock">
+                            <div class="review_user_info">
+                                <span class="review_user_name">topheligun</span>
+                                <span class="review_date">2023-03-03</span>
+                            </div>
+                            <div class="review_user_con">
+                                가르침 ..이란 제목에서 알아봤어야 했는데...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review_con_gap">
+                        <hr>
+                    </div>
+
+                    <div class="review_con_05">
+                        <div class="review_con_05_L dis_inBlock">
+                            <span class="review_con_star">
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review_con_05_R dis_inBlock">
+                            <div class="review_user_info">
+                                <span class="review_user_name">LucyLucybright</span>
+                                <span class="review_date">2023-02-06</span>
+                            </div>
+                            <div class="review_user_con">
+                                책값에 감동하며 예약 구매 눌렀어요. 그동안 수많은 부자들이 부자되는 법을 강의하며 본인들이 그 강의수익금으로 부자 되는 걸 보면서 꽤 많이
+                                불편했습니다. 저 사람은 저렇게 부자인데 더 부를 쌓기위해 부자되는 법을 가르치며 본인은 또 부자되는걸 보면서 불편해하는 나를 책망했지요.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review_con_gap">
+                        <hr>
+                    </div>
+
+                    <div class="review_con_05">
+                        <div class="review_con_05_L dis_inBlock">
+                            <span class="review_con_star">
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review_con_05_R dis_inBlock">
+                            <div class="review_user_info">
+                                <span class="review_user_name">LucyLucybright</span>
+                                <span class="review_date">2023-02-06</span>
+                            </div>
+                            <div class="review_user_con">
+                                책값에 감동하며 예약 구매 눌렀어요. 그동안 수많은 부자들이 부자되는 법을 강의하며 본인들이 그 강의수익금으로 부자 되는 걸 보면서 꽤 많이
+                                불편했습니다. 저 사람은 저렇게 부자인데 더 부를 쌓기위해 부자되는 법을 가르치며 본인은 또 부자되는걸 보면서 불편해하는 나를 책망했지요.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review_con_gap">
+                        <hr>
+                    </div>
+
+                    <div class="review_con_05">
+                        <div class="review_con_05_L dis_inBlock">
+                            <span class="review_con_star">
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review_con_05_R dis_inBlock">
+                            <div class="review_user_info">
+                                <span class="review_user_name">LucyLucybright</span>
+                                <span class="review_date">2023-02-06</span>
+                            </div>
+                            <div class="review_user_con">
+                                책값에 감동하며 예약 구매 눌렀어요. 그동안 수많은 부자들이 부자되는 법을 강의하며 본인들이 그 강의수익금으로 부자 되는 걸 보면서 꽤 많이
+                                불편했습니다. 저 사람은 저렇게 부자인데 더 부를 쌓기위해 부자되는 법을 가르치며 본인은 또 부자되는걸 보면서 불편해하는 나를 책망했지요.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review_con_gap">
+                        <hr>
+                    </div>
+
+                    <div class="review_con_05">
+                        <div class="review_con_05_L dis_inBlock">
+                            <span class="review_con_star">
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review_con_05_R dis_inBlock">
+                            <div class="review_user_info">
+                                <span class="review_user_name">LucyLucybright</span>
+                                <span class="review_date">2023-02-06</span>
+                            </div>
+                            <div class="review_user_con">
+                                책값에 감동하며 예약 구매 눌렀어요. 그동안 수많은 부자들이 부자되는 법을 강의하며 본인들이 그 강의수익금으로 부자 되는 걸 보면서 꽤 많이
+                                불편했습니다. 저 사람은 저렇게 부자인데 더 부를 쌓기위해 부자되는 법을 가르치며 본인은 또 부자되는걸 보면서 불편해하는 나를 책망했지요.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review_con_gap">
+                        <hr>
+                    </div>
+
+                    <div class="review_con_05">
+                        <div class="review_con_05_L dis_inBlock">
+                            <span class="review_con_star">
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review_con_05_R dis_inBlock">
+                            <div class="review_user_info">
+                                <span class="review_user_name">LucyLucybright</span>
+                                <span class="review_date">2023-02-06</span>
+                            </div>
+                            <div class="review_user_con">
+                                책값에 감동하며 예약 구매 눌렀어요. 그동안 수많은 부자들이 부자되는 법을 강의하며 본인들이 그 강의수익금으로 부자 되는 걸 보면서 꽤 많이
+                                불편했습니다. 저 사람은 저렇게 부자인데 더 부를 쌓기위해 부자되는 법을 가르치며 본인은 또 부자되는걸 보면서 불편해하는 나를 책망했지요.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review_con_gap">
+                        <hr>
+                    </div>
+
+                    <div class="review_con_05">
+                        <div class="review_con_05_L dis_inBlock">
+                            <span class="review_con_star">
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                                <i class="review_star_col fa-solid fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review_con_05_R dis_inBlock">
+                            <div class="review_user_info">
+                                <span class="review_user_name">LucyLucybright</span>
+                                <span class="review_date">2023-02-06</span>
+                            </div>
+                            <div class="review_user_con">
+                                책값에 감동하며 예약 구매 눌렀어요. 그동안 수많은 부자들이 부자되는 법을 강의하며 본인들이 그 강의수익금으로 부자 되는 걸 보면서 꽤 많이
+                                불편했습니다. 저 사람은 저렇게 부자인데 더 부를 쌓기위해 부자되는 법을 가르치며 본인은 또 부자되는걸 보면서 불편해하는 나를 책망했지요.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grad"></div>
+
+            </div>
+
+            <div class="view_box">
+                <input class="view" type="checkbox">
+            </div>
+        </form>
+
+        <hr>
+        <!-- ===================================================================== -->
+        <!-- return -->
+
+        <div class="return">
+            <div class="return_L dis_inBlock">반품/교환안내</div>
+            <div class="return_R dis_inBlock">
+                <table class="return_table">
+                    <tr>
+                        <td>반품/교환 방법</td>
+                        <td>"나의계정>주문조회>반품/교환신청", 1:1상담 > 반품/교환 또는 고객센터(1544-2514)
+                            판매자 배송상품은 판매자와 반품/교환이 협의된 상품에 한해 가능
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>반품/교환 가능기간</td>
+                        <td>o 변심반품 수령 후 20일(단, 중고매장 상품은 구매 후 구매 다음날로 부터 7일, 회원직거래 중고상품은 출고일로 부터 구매확정 전 상태로 6일, 전자책
+                            단말기 등
+                            전자제품은 수령 후 7일 이내 제품 포장 미개봉시, eBook은 결제 후 다운로드 받지 않은 상태, 웹뷰어로 보거나 듣지 않은 상태에서 20일 이내)
+
+                            o 파본 등 상품결함 시 '문제점 발견 후 30일(단, 수령일로 부터 3개월)' 이내
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>반품/교환 비용</td>
+                        <td>o 변심 혹은 구매착오의 경우에만 반송료 고객 부담
+                            o 해외직배송도서의 변심 혹은 구매착오로 인한 취소/반품은 판매가의 20% 취소수수료 고객 부담
+
+                            * 취소수수료 : 수입제반비용(국내 까지의 운송비, 관세사비, 보세창고료, 내륙 운송비, 통관비 등)과 재고리스크(미판매 리스크, 환차손)에 따른 비용 등
+                            단, 아래의 주문/취소 조건인 경우, 취소 수수료 면제
+                            - 오늘 00시~06시 주문을 오늘 06시 이전 취소
+                            - 오늘 06시 이후 주문 후 다음 날 06시 이전 취소
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>반품/교환 불가 사유</td>
+                        <td>o 소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우
+                            o 소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우
+                            예) 전자책 단말기,가전제품, 래핑이 제거된 만화책/라이트노벨/수험서/문제집류
+                            o 복제가 가능 또는 단기간 내 완독 가능 상품의 자체 포장이나 래핑을 훼손한 경우
+                            예) 음반,DVD,비디오,Blu-ray,소프트웨어, 잡지, 영상 화보집
+                            o 소비자 요청에 의한 주문 제작 상품(분철도서, POD 도서 등)
+                            o 세트 상품 일부만 반품 불가(전체 반품 후 낱권 재구매)
+                            o 디지털 컨텐츠인 eBook, 오디오북 등을 1회 이상 다운로드 받았거나 웹뷰어로 보기 혹은 듣기를 한 경우
+                            o 대여 기간이 종료된 eBook, 오디오북 대여제 상품
+                            o 신선도 문제로 일정 기한 경과 시 상품 가치가 현저하게 감소하는 상품 (원두, 콜드브루, 드립백 등)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>소비자 피해보상
+                            환불지연에 따른 배상</td>
+                        <td>o 상품의 불량에 의한 반품, 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁해결기준 (공정거래위원회 고시)에 준하여 처리됨
+                            o 대금 환불 및 환불 지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리함
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===================================================================== -->
+    <!-- footer -->
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_menu">
+                <ul>
+                    <li>
+                        <a href="../../footer/company_introduction.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="../../footer/terms_and_conditions.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="../../footer/personal_information_policy_info.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="../../footer/youth_policy_info.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">청소년
+                            보호정책</a>
+                    </li>
+                    <li>
+                        <a href="../../footer/partnership_marketing.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">제휴 마케팅
+                            안내</a>
+                    </li>
+                    <li>
+                        <a href="../../footer/advertisement.html"
+                            onclick="window.open(this.href, '_blank', 'width=800, height=600'); return false;">광고 안내</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_info">
+                <h3>여우</h3>
+                <div class="footer_info_list">
+                    <address class="company_info">
+                        <span>대표이사 홍길동</span>
+                        <span>고객정보보호 책임자 홍길동</span>
+                        <span>사업자 등록 123-45678-90</span>
+                        <span>통신판매업신고 분당구</span>
+                        <div>
+                            <span>이메일 : FoxFox@FoxFox.com</span>
+                            <span>대표전화 : 02 -1234 - 5678</span>
+                            <span>경기도 성남시 분당구 어딘가</span>
+                        </div>
+                    </address>
+                    <div class="customer_center">
+                        <span>고객센터 : 1588 - 1588</span>
+                        <span><a href="../../customer_service/customer_service_mail_inquires.html">1:1 문의</a></span>
+                        <span><a href="../../customer_service/customer_service_faq.html">FAQ</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================================ -->
+    <!-- 우측 사이드바 -->
+    <aside class="side_button">
+        <div>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi1 bi-chat-square-dots-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg>
+            </a>
+        </div>
+
+        <div>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi2 bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                </svg>
+            </a>
+        </div>
+    </aside>
+
+</body>
+
+</html>
